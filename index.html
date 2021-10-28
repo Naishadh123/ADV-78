@@ -119,49 +119,112 @@
 <script>
 
     //How to declare the arrays ? the id to be refer for innerHTML is declaration_of_arrays
+    var fruits=["Apple","Orange","Mango"];
+    console.log(fruits);
+    document.getElementById("declaration_of_arrays").innerHTML=fruits;
 
     //How to fetch the first element of the array ? the id to be refer for innerHTML is access_first_element
+    var first_fruit=fruits[0];
+    console.log(first_fruit);
+    document.getElementById("access_first_element").innerHTML=first_fruit;
 
     //How to fetch the second element of the array ? the id to be refer for innerHTML is access_second_element
+    var second_fruit=fruits[1];
+    console.log(second_fruit);
+    document.getElementById("access_second_element").innerHTML=second_fruit;
 
     //How to fetch the third element of the array ? the id to be refer for innerHTML is access_third_element
+    var third_fruit=fruits[2];
+    console.log(third_fruit);
+    document.getElementById("access_third_element").innerHTML=third_fruit;
 
     //How to get the length of the array ? the id to be refer for innerHTML is display_length_of_array
+    var fruits_lenght=fruits.length;
+    console.log(fruits_lenght);
+    document.getElementById("display_length_of_array").innerHTML=fruits_lenght;
 
     //How to loop the array ? the id to be refer for innerHTML is loop_the_array
+    var array="";
+    for(i=0;i<fruits.length;i++) {
+    console.log(fruits[i]);
+    array=array+fruits[i]+"<br>";
+    }
+    document.getElementById("loop_the_array").innerHTML=array;
 
     //adding element at the end of the array using push method
     //How to add element at the end of the array ? the id to be refer for innerHTML is add_element_at_the_end_of_array
+    fruits.push("Lemon");
+    console.log(fruits);
+    document.getElementById("add_element_at_the_end_of_array").innerHTML=fruits;
 
     //How to more elements at the end of the array ? the id to be refer for innerHTML is add_more_element_at_the_end_of_array
+    fruits.push("Banana");
+    console.log(fruits);
+    document.getElementById("add_more_element_at_the_end_of_array").innerHTML=fruits;
 
     //How to declare array with alphabets ? the id to be refer for innerHTML is display_alphabets_array
+    var alphabets=["a","e","c","d","b"];
+    console.log(alphabets);
+    document.getElementById("display_alphabets_array").innerHTML=alphabets;
 
     //How to sort array with alphabets ? the id to be refer for innerHTML is display_sorted_alphabets_array
+    alphabets.sort();
+    console.log(alphabets);
+    document.getElementById("display_sorted_alphabets_array").innerHTML=alphabets;
 
     //How to reverse the array ? the id to be refer for innerHTML is display_reverse_array
+    alphabets.reverse();
+    console.log(alphabets);
+    document.getElementById("display_reverse_array").innerHTML=alphabets;
 
     //How to declare array with numbers ? the id to be refer for innerHTML is display_number_array
+    var numbers=["45","9","4","21"];
+    console.log(numbers);
+    document.getElementById("display_number_array").innerHTML=numbers;
 
     //How to find the maximum number from the array with numbers ? the id to be refer for innerHTML is display_maximum_number
+    var max_number=Math.max.apply(Math,numbers);
+    console.log(max_number);
+    document.getElementById("display_maximum_number").innerHTML=max_number;
 
     //How to find the minimum number from the array with numbers ? the id to be refer for innerHTML is display_minimum_number
-
+    var min_number=Math.min.apply(Math,numbers);
+    console.log(min_number);
+    document.getElementById("display_minimum_number").innerHTML=min_number;
+    
     console.log("ADDITIONAL ACTIVITY");
 
     //Use unshift method to add element at the start of the array . the id to be refer for innerHTML is add_element_at_the_start_of_array
+    fruits.unshift("Watermelon");
+    console.log(fruits);
+    document.getElementById("add_element_at_the_start_of_array").innerHTML=fruits;
 
     //Use unshift method to add more elements at the start of the array . the id to be refer for innerHTML is add_more_element_at_the_start_of_array
+    fruits.unshift("Strawberry");
+    console.log(fruits);
+    document.getElementById("add_more_element_at_the_start_of_array").innerHTML=fruits;
 
     //Use shift method to remove elements from the start of the array . the id to be refer for innerHTML is remove_element_from_start_of_array
+    fruits.shift();
+    console.log(fruits);
+    document.getElementById("remove_element_from_start_of_array").innerHTML=fruits;
 
     //Use pop method to remove elements from the end of the array . the id to be refer for innerHTML is remove_element_from_end_of_array
+    fruits.pop();
+    console.log(fruits);
+    document.getElementById("remove_element_from_end_of_array").innerHTML=fruits;
 
     //How declare array with first world country ? 
-
+    var first_world_countries=["United States","Canada","Japan","Australia","New Zealand"];
+    console.log(first_world_countries);
+    
     //How declare array with second world country ? 
+    var second_world_countries=["Russia","Germany","Hungary","Poland","Mongolia"];
+    console.log(second_world_countries);
 
     //use concat method to merge two arrays . the id to be refer for innerHTML is merge_two_arrays
-
+    merge_arrays=first_world_countries.concat(second_world_countries);
+    console.log(merge_arrays);
+    document.getElementById("merge_two_arrays").innerHTML=merge_arrays;
 </script>
 </html>
